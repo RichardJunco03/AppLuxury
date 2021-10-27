@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLuxury.View.Reloj1">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="*">
+                <!--Header-->
+
+                <Grid  ColumnDefinitions="*,*,*"
+                      RowDefinitions="Auto,200,Auto,60,60,60,60,60">
+                    <Image Grid.Column="0" 
+                       Grid.Row="0"
+                       Grid.ColumnSpan="1"
+                       Source="diamante.png"
+                       HorizontalOptions="StartAndExpand"
+                       HeightRequest="30" 
+                       WidthRequest="30"/>
+                    <Label Grid.Column="1" 
+                       Grid.Row="0"
+                       Grid.ColumnSpan="3"
+                       Text="Luxury"
+                       HorizontalOptions="Start"
+                       FontSize="Title"
+                       TextColor="Black"
+                       FontAttributes="Bold"/>
+                    <Image Grid.Column="6" 
+                       Grid.Row="0"
+                       HorizontalOptions="EndAndExpand"
+                       Grid.ColumnSpan="2" 
+                       Source="shop.png"
+                       HeightRequest="30" 
+                       WidthRequest="30"/>
+                    <Image Grid.Column="7" 
+                       Grid.Row="0"
+                       HorizontalOptions="EndAndExpand"
+                       Grid.ColumnSpan="2" 
+                       Source="user.png"
+                       HeightRequest="30" 
+                       WidthRequest="30"/>
+
+                    <Image Grid.Column="2" Grid.Row="1" Source="reloj1" Grid.ColumnSpan="5" VerticalOptions="Start" HorizontalOptions="Start"/>
+
+                    <Frame Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="9">
+                        <Label FontSize="Subtitle" FontAttributes="Bold" Text="Especificaciones" />
+                    </Frame>
+                    <Frame BackgroundColor="WhiteSmoke" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="9" >
+                        <Label  Text="Marca                                                    Casio"/>
+                    </Frame>
+                    <Frame Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="9" >
+                        <Label  Text="Modelo                                                  GD-350-1B G-STOCK"/>
+                    </Frame>
+                    <Frame BackgroundColor="WhiteSmoke" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="9" >
+                        <Label  Text="Tipo                                                       Análogo"/>
+                    </Frame>
+                    <Frame Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="9" >
+                        <Label  Text="Material                                                Acero inoxidable"/>
+                    </Frame>
+                    <Frame BackgroundColor="WhiteSmoke" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="9" >
+                        <Label  Text="Color                                                      Plateado"/>
+                    </Frame>
+                   
+
+
+                    <!--footer-->
+                <Frame Grid.Row="8" 
+                           Grid.ColumnSpan="9" 
+                           HeightRequest="40" 
+                           BackgroundColor="White"
+                           >
+                    <Grid RowDefinitions="*" ColumnDefinitions="Auto,Auto">
+                        <Label Margin="9,0" Grid.Column="0" Text="Correo:&#10;servicios@luxury.com&#10;ventas@luxury.com" FontSize="10"/>
+                        <Label Margin="9,0" Grid.Column="1" Text="Contacto:&#10;946 111 248&#10;931 458 247" FontSize="10"/>
+                        <Label Margin="9,0" Grid.Column="2" Text="Ubicación:&#10;Av. Nicolás Ayllón Santa Anita&#10;Avenida Javier Prado Este 4200" FontSize="10"/>
+                    </Grid>
+                </Frame>
+            </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

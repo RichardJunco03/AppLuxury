@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLuxury.View.Reloj">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowDefinitions="*">
+                <!--Header-->
+
+                <Grid  ColumnDefinitions="*,*,*"
+                      RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+                    <Image Grid.Column="0" 
+                       Grid.Row="0"
+                       Grid.ColumnSpan="1"
+                       Source="diamante.png"
+                       HorizontalOptions="StartAndExpand"
+                       HeightRequest="30" 
+                       WidthRequest="30"/>
+                    <Label Grid.Column="1" 
+                       Grid.Row="0"
+                       Grid.ColumnSpan="3"
+                       Text="Luxury"
+                       HorizontalOptions="Start"
+                       FontSize="Title"
+                       TextColor="Black"
+                       FontAttributes="Bold"/>
+                    <Image Grid.Column="6" 
+                       Grid.Row="0"
+                       HorizontalOptions="EndAndExpand"
+                       Grid.ColumnSpan="2" 
+                       Source="shop.png"
+                       HeightRequest="30" 
+                       WidthRequest="30"/>
+                    <Image Grid.Column="7" 
+                       Grid.Row="0"
+                       HorizontalOptions="EndAndExpand"
+                       Grid.ColumnSpan="2" 
+                       Source="user.png"
+                       HeightRequest="30" 
+                       WidthRequest="30"/>
+                    <!--HorizontalRelojes-->
+                    <Label      Text="Reloj"
+                                FontSize="Subtitle"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start"
+                                Grid.Column="0" 
+                                Grid.Row="1"
+                                Grid.ColumnSpan="4" />
+                    <CollectionView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="9"
+                                ItemsSource="{Binding reloj}"
+                                VerticalOptions="StartAndExpand"
+                                ItemsLayout="HorizontalList"
+                                HeightRequest="200">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout Margin="8,0">
+                                    <Grid ColumnDefinitions="Auto">
+                                        <Frame  BackgroundColor="White"
+                                       WidthRequest="80"
+                                       VerticalOptions="FillAndExpand"
+                                       HorizontalOptions="Start"
+                                       CornerRadius="20">
+                                            <Grid HorizontalOptions="Center" 
+                                              RowSpacing="5" 
+                                              RowDefinitions="Auto,Auto,Auto,Auto">
+                                                <Image Grid.Row="0"
+                                               HorizontalOptions="Center"
+                                               Source="{Binding ImagenReloj}"
+                                               WidthRequest="200"
+                                                   HeightRequest="100"/>
+                                                <Label Grid.Row="1"
+                                               Text="{Binding MarcaReloj}"
+                                               FontAttributes="None"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Black"
+                                               FontSize="5"/>
+                                                <Label Grid.Row="2"
+                                               Text="{Binding ModeloReloj}"
+                                               FontAttributes="Bold"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Black"
+                                               FontSize="5"/>
+                                                <Label Grid.Row="3"
+                                               Text="{Binding PrecioReloj}"
+                                               FontAttributes="none"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Black"
+                                               FontSize="Micro"/>
+                                                <Label Grid.Row="4"
+                                               Text="{Binding OfertaReloj}"
+                                               FontAttributes="Bold"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Red"
+                                               FontSize="Micro"/>
+                                            </Grid>
+                                        </Frame>
+                                    </Grid>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <!--HorizontalRelojes-->
+                    <!--HorizontalRelojes-->
+                    <Label      Text="Reloj"
+                                FontSize="Subtitle"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start"
+                                Grid.Column="0" 
+                                Grid.Row="3"
+                                Grid.ColumnSpan="4" />
+                    <CollectionView Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="9"
+                                ItemsSource="{Binding reloj}"
+                                VerticalOptions="StartAndExpand"
+                                ItemsLayout="HorizontalList"
+                                HeightRequest="200">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout Margin="8,0">
+                                    <Grid ColumnDefinitions="Auto">
+                                        <Frame  BackgroundColor="White"
+                                       WidthRequest="80"
+                                       VerticalOptions="FillAndExpand"
+                                       HorizontalOptions="Start"
+                                       CornerRadius="20">
+                                            <Grid HorizontalOptions="Center" 
+                                              RowSpacing="5" 
+                                              RowDefinitions="Auto,Auto,Auto,Auto">
+                                                <Image Grid.Row="0"
+                                               HorizontalOptions="Center"
+                                               Source="{Binding ImagenReloj}"
+                                               WidthRequest="200"
+                                                   HeightRequest="100"/>
+                                                <Label Grid.Row="1"
+                                               Text="{Binding MarcaReloj}"
+                                               FontAttributes="None"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Black"
+                                               FontSize="5"/>
+                                                <Label Grid.Row="2"
+                                               Text="{Binding ModeloReloj}"
+                                               FontAttributes="Bold"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Black"
+                                               FontSize="5"/>
+                                                <Label Grid.Row="3"
+                                               Text="{Binding PrecioReloj}"
+                                               FontAttributes="none"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Black"
+                                               FontSize="Micro"/>
+                                                <Label Grid.Row="4"
+                                               Text="{Binding OfertaReloj}"
+                                               FontAttributes="Bold"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Red"
+                                               FontSize="Micro"/>
+                                            </Grid>
+                                        </Frame>
+                                    </Grid>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <!--HorizontalRelojes-->
+                    <!--HorizontalRelojes-->
+                    <Label      Text="Reloj"
+                                FontSize="Subtitle"
+                                HorizontalOptions="Start"
+                                VerticalOptions="Start"
+                                Grid.Column="0" 
+                                Grid.Row="5"
+                                Grid.ColumnSpan="4" />
+                    <CollectionView Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="9"
+                                ItemsSource="{Binding reloj}"
+                                VerticalOptions="StartAndExpand"
+                                ItemsLayout="HorizontalList"
+                                HeightRequest="200">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout Margin="8,0">
+                                    <Grid ColumnDefinitions="Auto">
+                                        <Frame  BackgroundColor="White"
+                                       WidthRequest="80"
+                                       VerticalOptions="FillAndExpand"
+                                       HorizontalOptions="Start"
+                                       CornerRadius="20">
+                                            <Grid HorizontalOptions="Center" 
+                                              RowSpacing="5" 
+                                              RowDefinitions="Auto,Auto,Auto,Auto">
+                                                <Image Grid.Row="0"
+                                               HorizontalOptions="Center"
+                                               Source="{Binding ImagenReloj}"
+                                               WidthRequest="200"
+                                                   HeightRequest="100"/>
+                                                <Label Grid.Row="1"
+                                               Text="{Binding MarcaReloj}"
+                                               FontAttributes="None"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Black"
+                                               FontSize="5"/>
+                                                <Label Grid.Row="2"
+                                               Text="{Binding ModeloReloj}"
+                                               FontAttributes="Bold"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Black"
+                                               FontSize="5"/>
+                                                <Label Grid.Row="3"
+                                               Text="{Binding PrecioReloj}"
+                                               FontAttributes="none"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Black"
+                                               FontSize="Micro"/>
+                                                <Label Grid.Row="4"
+                                               Text="{Binding OfertaReloj}"
+                                               FontAttributes="Bold"
+                                               VerticalOptions="Start"
+                                               HorizontalOptions="Start"
+                                               TextColor="Red"
+                                               FontSize="Micro"/>
+                                            </Grid>
+                                        </Frame>
+                                    </Grid>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    <!--HorizontalRelojes-->
+                    <!--footer-->
+                    <Frame Grid.Row="7" 
+                           Grid.ColumnSpan="9" 
+                           HeightRequest="40" 
+                           BackgroundColor="White"
+                           >
+                        <Grid RowDefinitions="*" ColumnDefinitions="Auto,Auto">
+                            <Label Margin="9,0" Grid.Column="0" Text="Correo:&#10;servicios@luxury.com&#10;ventas@luxury.com" FontSize="10"/>
+                            <Label Margin="9,0" Grid.Column="1" Text="Contacto:&#10;946 111 248&#10;931 458 247" FontSize="10"/>
+                            <Label Margin="9,0" Grid.Column="2" Text="Ubicación:&#10;Av. Nicolás Ayllón Santa Anita&#10;Avenida Javier Prado Este 4200" FontSize="10"/>
+                        </Grid>
+                    </Frame>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
